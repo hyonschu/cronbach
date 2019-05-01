@@ -3,7 +3,7 @@ def Cronbach(corr_matrix, drops=None, corr_func='pearson', raw_data=1):
 	Takes a pandas dataframe and returns Cronbach's alpha
 	
 	`corr_matrix` is a pandas dataframe. np.array would also work (maybe)
-	`drops` allows to compare alpha with missing features to check consistency
+	`drops` allows to compare alpha with missing features to check its effect
 	`corr_func` can be any function of pd.DataFrame.corr() ie 'pearson, 'kendall'
 	`raw_data` when == 1 means the dataframe is raw responses. 0 means correlations are already applied
 
