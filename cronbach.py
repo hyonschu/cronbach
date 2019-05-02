@@ -12,10 +12,10 @@ def Cronbach(corr_matrix, drops=None, corr_func='pearson', raw_data=1):
 
 	import numpy as np
 	if raw_data == 1:
-	if drops:
-	    corr_matrix = corr_matrix.drop(drops, axis=1).corr(corr_func)
-	else: 
-	    corr_matrix = corr_matrix.corr(corr_func)
+		if drops:
+		    corr_matrix = corr_matrix.drop(drops, axis=1).corr(corr_func)
+		else: 
+		    corr_matrix = corr_matrix.corr(corr_func)
 	else: pass
 	corr_matrix = np.array(corr_matrix)
 	x,y = corr_matrix.shape
